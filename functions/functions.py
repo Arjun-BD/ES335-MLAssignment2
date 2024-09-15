@@ -114,7 +114,7 @@ def plot_images(original, downscaled, predicted, title=""):
 def calculate_metrics(original, predicted):
     mse = nn.MSELoss()(original, predicted)
     rmse = torch.sqrt(mse)
-    psnr = 20 * torch.log10(1.0 / rmse)
+    psnr = 20 * torch.log10(1 / rmse)
     return rmse.item(), psnr.item()
 
 
