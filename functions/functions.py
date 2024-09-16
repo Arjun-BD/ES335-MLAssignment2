@@ -55,7 +55,6 @@ def scale_coordinates(Xcords):
     return X_scaled, scaler_X
 
 def create_rff_features(X, num_features, sigma, seed=42):
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     rff = RBFSampler(n_components=num_features, gamma=1/(2 * sigma**2), random_state=seed)
     X_rff = torch.tensor(rff.fit_transform(X.cpu().numpy()), dtype=torch.float32).to(device)
     return X_rff
