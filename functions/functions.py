@@ -96,7 +96,7 @@ def plot_reconstructed_and_original_image(original_img, net, X, title=""):
     with torch.no_grad():
         outputs = net(X)
         outputs = outputs.reshape(height, width, num_channels)
-    fig = plt.figure(figsize=(6, 4))
+    fig = plt.figure(figsize=(6,4))
     gs = gridspec.GridSpec(1, 2, width_ratios=[1, 1])
     ax0 = plt.subplot(gs[0])
     ax1 = plt.subplot(gs[1])
