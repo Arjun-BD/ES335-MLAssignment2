@@ -1,0 +1,5 @@
+sunflower = "https://pixabay.com/photos/sunflower-flower-bud-blossom-8233332/"
+Water lily = "https://pixabay.com/photos/water-lily-flower-botany-3784022/"
+flower-purple = "https://pixabay.com/photos/flower-purple-petals-purple-flower-729512/"
+peonies = "https://pixabay.com/photos/peonies-petals-to-flourish-bloom-8027028/"
+peony-new = "https://pixabay.com/photos/peony-flower-beautiful-wildflower-8166078/"
